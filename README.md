@@ -1,27 +1,14 @@
 # NoahSentryExample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+Pretty simple to run:
 
-## Development server
+First, make sure to go into the "src.main.ts" file and put in your own Sentry dsn (right now it's mine). Save it. This will ensure the error message it throws gets sent to the right place.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Clone "git clone https://github.com/nomdal/Sentry_Example/"
+2. "cd Sentry_Example"
+3. May need to do "npm install --save @sentry/angular @sentry/tracing" or just "npm install" but should be fine since all the dependencies should be uploaded to the Github.
+4. Run it with "ng serve --open"
 
-## Code scaffolding
+Now it will open the locally hosted site in your browser. All you need to do is hit the button and it will call a function to generate an error, which will then be sent to your Sentry account that you previously linked.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Woo!
