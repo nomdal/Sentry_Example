@@ -3,7 +3,10 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/"
   },
   "files": [
     "src/main.ts",
